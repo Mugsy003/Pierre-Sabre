@@ -2,7 +2,7 @@ package personnages;
 public class Yakuza extends Humain {
 	private int reputation=4;
 
-	public Yakuza(String nom, int argent, String boisson) {
+	public Yakuza(String nom, int argent, String boisson,String clan) {
 		super(nom, argent, boisson);
 		// TODO Auto-generated constructor stub
 	}
