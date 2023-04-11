@@ -1,7 +1,7 @@
 package personnages;
 public class Yakuza extends Humain {
 	private int reputation=4;
-
+	private String clan;
 	public Yakuza(String nom, int argent, String boisson,String clan) {
 		super(nom, argent, boisson);
 		// TODO Auto-generated constructor stub
@@ -10,7 +10,12 @@ public class Yakuza extends Humain {
 	public int getReputation() {
 		return reputation;
 	}
-	
+	@Override
+	public void direBonjour() {
+		super.direBonjour();
+		parler("Mon clan est celui de"+clan);
+		
+	}
 	public void extorquer(Commercant victime) {
 		int vicArgent = victime.getArgent();
 		parler("Tiens, tiens, ne serait-ce pas un faible marchand qui passe par là ?");
